@@ -1,4 +1,4 @@
-# Preference-Aware Autonomous Debugging Agent
+# Soren AI Interview - Parth Kharkar
 ## Architecture Document
 
 ---
@@ -231,14 +231,3 @@ Session N:
 | CLI Interface | Python input() | Simple, no dependencies |
 
 ---
-
-## 8. Key Design Decisions & Tradeoffs
-
-### Why SQLite over a vector database?
-For V1, rule-based retrieval with a scoring formula is sufficient and far simpler to reason about, explain, and debug. A vector DB would add semantic similarity search but also adds significant complexity for a project of this scope. Semantic retrieval is noted as a future improvement.
-
-### Why not fine-tune?
-Fine-tuning requires large datasets, is expensive, and does not allow real-time preference updates. Retrieval-augmented preferences are lightweight, explainable, and update instantly from each session.
-
-### Why two-level memory vs. one?
-A single preference memory cannot short-circuit Claude calls when an exact bug match exists. Two levels allows the system to demonstrate two distinct types of improvement — recognition-based and preference-based — which makes the benchmark story cleaner and more compelling.
