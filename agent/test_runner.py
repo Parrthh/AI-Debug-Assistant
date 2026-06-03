@@ -2,7 +2,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from test_analyzer import bugs_directory
+# from test_analyzer import bugs_directory
 
 def run_tests(bug_context, fixed_code):
     """

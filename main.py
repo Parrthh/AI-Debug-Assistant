@@ -7,7 +7,7 @@ from agent.fix_generator import generate_fix
 from agent.test_runner import run_tests
 from agent.memory_engine import initialize_db, find_matching_bug, get_top_preferences, increment_reuse_count
 from agent.feedback_manager import collect_feedback
-from test_analyzer import bugs_directory
+# from test_analyzer import bugs_directory
 
 # Load environment variables from .env
 load_dotenv()

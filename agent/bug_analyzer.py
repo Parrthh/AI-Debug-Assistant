@@ -6,11 +6,11 @@ import sys
 # Linking Python's built-in error names to our own bug categories
 ERROR_TYPE_MAP = {
     "IndexError": "off_by_one",
-    "AssertionError": "off_by_one",
+    "AssertionError": "logic_error",
     "TypeError": "type_error",
     "ValueError": "logic_error",
     "RecursionError": "infinite_loop",
-    "TimeoutExpired": "infinite_loop"
+    "Failed: Timeout": "infinite_loop"
 }
 
 def analyze_bug(bugs_directory):
