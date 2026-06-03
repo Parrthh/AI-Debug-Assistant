@@ -208,6 +208,14 @@ def get_top_preferences(n=5):
             recency_score = 0.4
 
         # Final score using our weighted formula
+        # Frequency (0.5) - carries the most weight because repeated signals are the strongest evidence of a preference. 
+        # If an engineer has expressed the same preference multiple times it is more reliable than anything said only one
+
+        # Recency (0.3) - second weight because engineer preferences evolve over time.
+        # A preference which was expressed last week is more relevant than a preference from two months ago.
+
+        # Acceptance Rate (0.2) - Lowest weight because it is a quality signal rather than a frequency signal.
+        # Preferences that led to accepted fixes are more reliable when than those that did not, but a low acceptance rate response should not alone disqualify a frequently expressed preference
         score = (frequency_score * 0.5) + (recency_score * 0.3) + (acceptance_rate * 0.2)
         scored.append((score,rule))
 
