@@ -9,7 +9,6 @@ DB_PATH = Path("data/memory.db")
 def get_connection():
     # Creating and returning a connection to the SQLite database
     # Creating the "data/" folder if it doesn't exist
-
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     return sqlite3.connect(DB_PATH)
 
