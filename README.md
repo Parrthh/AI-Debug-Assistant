@@ -24,28 +24,30 @@ The system learns at two levels simultaneously:
 
 ---
 
-## Project Structure:
-├── bugs/                        # Synthetic bug dataset
-│   ├── bug_01_off_by_one/
-│   ├── bug_02_type_error/
-│   ├── bug_03_logic_error/
-│   ├── bug_04_edge_case/
-│   └── bug_05_infinite_loop/
-├── agent/
-│   ├── bug_analyzer.py          # Parses code, classifies bug type
-│   ├── fix_generator.py         # Calls Claude API, returns fixed code
-│   ├── test_runner.py           # Runs pytest, validates fix
-│   ├── memory_engine.py         # L1 bug matching + L2 preference retrieval
-│   ├── prompt_builder.py        # Assembles Claude prompt
-│   └── feedback_manager.py      # CLI review + preference extraction
-├── benchmark/
-│   └── benchmark_engine.py      # Tracks metrics, generates report
-├── data/
-│   └── memory.db                # SQLite database (auto-created, gitignored)
-├── main.py                      # Pipeline entry point
-├── requirements.txt
-└── .env                         # API key 
+## Project Structure
 
+```
+├── bugs/                        
+│   ├── bug_01_off_by_one/       
+│   ├── bug_02_type_error/       
+│   ├── bug_03_logic_error/      
+│   ├── bug_04_edge_case/        
+│   └── bug_05_infinite_loop/    
+├── agent/
+│   ├── bug_analyzer.py          
+│   ├── fix_generator.py         
+│   ├── test_runner.py           
+│   ├── memory_engine.py         
+│   ├── prompt_builder.py        
+│   └── feedback_manager.py      
+├── benchmark/
+│   └── benchmark_engine.py      
+├── data/
+│   └── memory.db                
+├── main.py                      
+├── requirements.txt
+└── .env                         
+```
 ---
 
 ## Setup
