@@ -1,17 +1,16 @@
 # KHARKAR-PARTH-SOREN-INTERVIEW
 
-## Project:
+## Project
+
 Build an end-to-end debugging pipeline that captures engineer preferences and improves its ability to autonomously steer fixes over time. The pipeline should:
 
-• Accept a buggy codebase or snippet as input.
-• Use an AI model to propose and implement a fix.
-• Allow an engineer to review and optionally steer or correct the fix.
-• Persist and learn from that feedback so future runs require less manual steering.
-• Demonstrate, in some measurable way, that the pipeline improves over iterations.
+- Accept a buggy codebase or snippet as input.
+- Use an AI model to propose and implement a fix.
+- Allow an engineer to review and optionally steer or correct the fix.
+- Persist and learn from that feedback so future runs require less manual steering.
+- Demonstrate, in some measurable way, that the pipeline improves over iterations.
 
-The design of the learning/feedback mechanism is the core of this project. How you structure
-preference capture, storage, and retrieval is up to you — that is the design problem we want to
-see you solve.
+The design of the learning/feedback mechanism is the core of this project. How you structure preference capture, storage, and retrieval is up to you — that is the design problem we want to see you solve.
 
 ---
 
