@@ -113,7 +113,7 @@ Runs all 5 bugs twice — cold run with no memory, then warm run with accumulate
 | Claude Calls | 5/5 | 0/5 | -5 |
 | Test Pass Rate | 5/5 | 5/5 | +0 |
 | Acceptance Rate | 5/5 | 5/5 | +0 |
-| Avg Resolution Time | 4.05s | 3.03ss | -1.02s |
+| Avg Resolution Time | 4.05s | 3.03s | -1.02s |
 
 ---
 
