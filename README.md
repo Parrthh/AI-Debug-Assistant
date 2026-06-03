@@ -109,11 +109,11 @@ Runs all 5 bugs twice — cold run with no memory, then warm run with accumulate
 
 | Metric | Cold Run | Warm Run | Delta |
 |---|---|---|---|
-| L1 Hit Rate | 1/5 | 5/5 | +4 |
-| Claude Calls | 4/5 | 0/5 | -4 |
-| Test Pass Rate | 4/5 | 4/5 | +0 |
-| Acceptance Rate | 4/5 | 4/5 | +0 |
-| Avg Resolution Time | 4.16s | 2.41s | -1.76s |
+| L1 Hit Rate | 0/5 | 5/5 | +5 |
+| Claude Calls | 5/5 | 0/5 | -5 |
+| Test Pass Rate | 5/5 | 5/5 | +0 |
+| Acceptance Rate | 5/5 | 5/5 | +0 |
+| Avg Resolution Time | 4.05s | 3.03ss | -1.02s |
 
 ---
 

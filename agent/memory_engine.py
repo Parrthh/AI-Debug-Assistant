@@ -118,7 +118,7 @@ def is_similar(error1, error2):
     words2 = set(error2.lower().split())
 
     # Remove common words
-    noise = {"at","in","the","a","an","is","was","for","of","to"}
+    noise = {"at","in","the","a","an","is","was","for","of","to","assert","==","where","and","or","not","from","with"}
     words1 -= noise
     words2 -= noise
 
@@ -127,7 +127,7 @@ def is_similar(error1, error2):
 
     # Calculating overlap ratio
     overlap = len(words1 & words2) / max(len(words1), len(words2))
-    return overlap >= 0.5
+    return overlap >= 0.7
 
 def store_bug(bug_context, accepted_fix):
     # Stores a new bug and its accepted fix in the bugs table
